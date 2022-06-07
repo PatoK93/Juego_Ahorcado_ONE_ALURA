@@ -1,0 +1,53 @@
+body {
+    background-image: url(../img/fondoPapel.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.logoAlura {
+    height: 60px;
+    width: 60px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.enBloque {
+    display: block;
+}
+
+.inputCentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letraGrande {
+    font-size: x-large;
+}
+
+.letraExtraGrande {
+    font-size: xx-large;
+}
+
+.signoExclamacion {
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+
+.display {
+    display: none;
+}
+
+.oculta {
+    visibility: hidden;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Juego del Ahorcado - Patricio Agustín Kanaszyc</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                    <a href="https://www.aluracursos.com/" target="_blank"><img src="img/logo.png" alt="logo Alura" class="logoAlura"></a>
+                </div>
+                <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11 centrado">
+                    <h1 class="letraExtraGrande">Juego del Ahorcado</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="divIndex">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <form action="">
+                            <label class="enBloque centrado letraExtraGrande">Ingrese una palabra</label>
+                            <div class="inputCentrado">
+                                <input id="inputPalabra" class="enBloque letraExtraGrande" type="text" placeholder="Ingrese una palabra para el ahorcado" maxlength="8">
+                            </div>
+                            <div class="centrado">
+                                <label><img src="img/signo-exclamacion.png " alt="signo exclamación" class="signoExclamacion">Máximo de 8 letras</label>
+                            </div>
+                            <div class="centrado">
+                                <button id="btnGuardar" type="button" class="btn btn-success btn-lg">Guardar</button>
+                                <button id="btnCancelar" type="button" class="btn btn-warning btn-lg">Cancelar</button>
+                                <button id="btnEmpezar" type="button" class="btn btn-success btn-lg">Empezar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="display" id="divAhorcado">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 centrado">
+                        <label for="" class="centrado letraExtraGrande">Ingrese una letra en Mayúscula<input type="text" class="centrado letraExtraGrande" id="inputCaracter" maxlength="1"></label>
+                        <h2>Intentos restantes: <label for="" id="intentosRestantes">10</label></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8 col-md-8 col-lg-12 col-xl-12 centrado">
+                        <img src="./img/fondoJuego.png" alt="Juego Ahorcado" id="imagenAhorcado">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 centrado">
+                        <h2 class="enBloque centrado letraExtraGrande">Palabra a adivinar</h2>
+                        <div class="centrado" id="divPalabra">
+                        </div>
+                        <div class="centrado" id="divEspacios">
+                        </div>
+                        <h2 class="enBloque centrado letraExtraGrande">Letras usadas</h2>
+                        <label for="" id="letrasUsadas" class="letraExtraGrande"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="centrado">
+                            <button id="btnNuevoJuego" type="button" class="btn btn-warning btn-lg">Nuevo Juego</button>
+                            <button id="btnDesistir" type="button" class="btn btn-warning btn-lg">Desistir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 centrado">
+                    <label class="letraGrande">&#169;Copyright <a href="https://github.com/PatoK93" target="_blank">Patricio Agustín Kanaszyc</a></label>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let variableGlobal;
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+</html>
